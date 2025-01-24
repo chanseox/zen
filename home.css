@@ -1,0 +1,34 @@
+.background {
+    background-color: #FFFFFF;
+}
+
+.title {
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.title p {
+    margin: 20px;
+}
+
+.start-button button {
+    all: unset;
+    color: #FF39D7;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline;
+    cursor: pointer;
+    background: none;
+    background: linear-gradient(to bottom, #FF39D7, #2400FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    position: fixed;
+    bottom: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
