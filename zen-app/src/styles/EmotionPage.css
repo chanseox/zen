@@ -2,6 +2,7 @@
   .emotion-page-background {
     position: absolute;
     left: 27%;
+    bottom: 10%;
     width: 680.414px;
     height: 737.303px;
     background: conic-gradient(from 180deg at 50.00% 50.00%, rgba(35.70, 0, 255, 0.52) 0deg, rgba(0, 255, 209.10, 0.52) 167deg, rgba(250, 221, 78, 0.52) 360deg);
@@ -104,4 +105,10 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
+  .finished-button {
+    position: fixed;
+    left: 50%;
+    top: 88%;
+    border: 1px solid black;
+  }

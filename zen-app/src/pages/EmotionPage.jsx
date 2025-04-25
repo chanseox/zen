@@ -1,11 +1,13 @@
 import '../styles/EmotionPage.css';
 import ResultBubble from '../components/ResultBubble';
 import { useEffect, useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function EmotionPage() {
   const [bubbles, setBubbles] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const scrollRef = useRef(null);
+  const navigate = useNavigate();
 
   const bubblesPerPage = 18;
   const pages = [];
@@ -41,6 +43,10 @@ export default function EmotionPage() {
     setCurrentPage(pageIndex);
   };
 
+  const startOver = () => {
+    navigate('/')
+  }
+
   return (
     <div className='emotion-page'>
       <div className='emotion-page-background' />
@@ -61,6 +67,8 @@ export default function EmotionPage() {
       ) : (
         <p className='empty-message'>No session results to display.</p>
       )}
+
+      <button className="finished-button" onClick={() => startOver()}>Done</button>
 
       <div className="page-indicator">
         {pages.map((_, index) => (
